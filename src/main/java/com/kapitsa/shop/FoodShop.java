@@ -13,12 +13,4 @@ class FoodShop extends Shop {
         return instance;
     }
 
-    public void run() {
-        System.out.println("Running thread " + thread.getName() + "... in Food Shop");
-
-    }
-
-
-
-
 }

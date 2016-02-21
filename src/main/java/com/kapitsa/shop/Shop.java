@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 //extends Runnable
-public abstract class Shop implements Runnable {
+public abstract class Shop {
     protected  Thread thread;
 
     protected static volatile Shop instance = null;
@@ -22,14 +22,6 @@ public abstract class Shop implements Runnable {
     protected final String SET_STATUS = "UPDATE Items SET State = ? WHERE Title = ?;";
 
     protected Shop() {
-    }
-
-    public void start() {
-        if (thread == null) {
-            thread = new Thread(this);
-            thread.start();
-        }
-        System.out.println("Started thread " + thread.getName() + "...");
     }
 
     //логичнее было бы реализовать метод в классе Item, но можно и так как написано в ТЗ
@@ -61,6 +53,7 @@ public abstract class Shop implements Runnable {
         }
 
     }
+
     public synchronized void setItemState(Item item, StatusEnum state) throws SQLException {
 
         PreparedStatement preparedStatement = null;
