@@ -44,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.569378">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,19 +60,30 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Shop#0;class#Shop#0" expanded="false" />
                 <element signature="method#setItemPrice#0;class#Shop#0" expanded="false" />
+                <element signature="method#setItemState#0;class#Shop#0" expanded="false" />
                 <element signature="method#getItemByTitle#0;class#Shop#0" expanded="false" />
                 <element signature="method#addItem#0;class#Shop#0" expanded="false" />
-                <marker date="1456077277273" expanded="true" signature="452:516" placeholder="SELECT id FR..categories..." />
-                <marker date="1456077277273" expanded="true" signature="555:612" placeholder="SELECT Title..Items..." />
-                <marker date="1456077277273" expanded="true" signature="650:685" placeholder="SELECT * FRO..Items..." />
-                <marker date="1456077277273" expanded="true" signature="728:770" placeholder="UPDATE Items..." />
-                <marker date="1456077277273" expanded="true" signature="815:857" placeholder="UPDATE Items..." />
+                <marker date="1456084710724" expanded="true" signature="502:566" placeholder="SELECT id FR..categories..." />
+                <marker date="1456084710724" expanded="true" signature="605:662" placeholder="SELECT Title..Items..." />
+                <marker date="1456084710724" expanded="true" signature="700:735" placeholder="SELECT * FRO..Items..." />
+                <marker date="1456084710724" expanded="true" signature="778:820" placeholder="UPDATE Items..." />
+                <marker date="1456084710724" expanded="true" signature="865:907" placeholder="UPDATE Items..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodShop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,17 +95,9 @@
               <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="method#Item#0;class#Item#0" expanded="false" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FoodShop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ShopFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -119,25 +122,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1052632">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1456077325507" expanded="true" signature="1147:1188" placeholder="CREATE DATAB..shopmanager..." />
-                <marker date="1456077325507" expanded="true" signature="1221:1441" placeholder="CREATE TABLE..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="1480:1866" placeholder="CREATE TABLE..Categories..." />
-                <marker date="1456077325507" expanded="true" signature="1900:2440" placeholder="CREATE TABLE..Items..." />
-                <marker date="1456077325507" expanded="true" signature="2472:2544" placeholder="INSERT IGNOR..." />
-                <marker date="1456077325507" expanded="true" signature="2580:3161" placeholder="INSERT IGNOR..." />
-                <marker date="1456077325507" expanded="true" signature="2681:2728" placeholder="SELECT id FR..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="2784:2831" placeholder="SELECT id FR..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="2891:2938" placeholder="SELECT id FR..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="2994:3045" placeholder="SELECT id FR..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="3099:3150" placeholder="SELECT id FR..Shops..." />
-                <marker date="1456077325507" expanded="true" signature="3503:3518" placeholder="USE shopmana..." />
+                <marker date="1456084117857" expanded="true" signature="1182:1223" placeholder="CREATE DATAB..shopmanager..." />
+                <marker date="1456084117857" expanded="true" signature="1256:1476" placeholder="CREATE TABLE..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="1515:1901" placeholder="CREATE TABLE..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="1935:2477" placeholder="CREATE TABLE..Items..." />
+                <marker date="1456084117857" expanded="true" signature="2509:2581" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="2617:3198" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="2718:2765" placeholder="SELECT id FR..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="2821:2868" placeholder="SELECT id FR..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="2928:2975" placeholder="SELECT id FR..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="3031:3082" placeholder="SELECT id FR..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="3136:3187" placeholder="SELECT id FR..Shops..." />
+                <marker date="1456084117857" expanded="true" signature="3230:3300" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3230:4403" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3230:4741" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3230:4742" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3230:6079" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3230:6080" placeholder="INSERT IGNOR..." />
+                <marker date="1456084117857" expanded="true" signature="3327:3373" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3440:3486" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3547:3593" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3652:3698" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3759:3806" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3874:3921" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="3982:4029" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4089:4136" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4207:4254" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4318:4365" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4430:4477" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4549:4596" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4663:4711" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4770:4818" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4881:4929" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="4994:5042" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5102:5150" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5214:5266" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5326:5378" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5438:5490" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5556:5608" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5667:5715" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5780:5828" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="5886:5934" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="6000:6025" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="6000:6048" placeholder="SELECT id FR..Categories..." />
+                <marker date="1456084117857" expanded="true" signature="6235:6250" placeholder="USE shopmana..." />
               </folding>
             </state>
           </provider>
@@ -158,26 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shopmanager.categories" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/c78d3261/96da5d18-dd97-45b7-9bc4-d2ab2feacea5/shopmanager..categories">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClothingShop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ClothingShop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -220,10 +240,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/bean/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/bean/ShopFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/bean/Shop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ClothingShop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java" />
       </list>
     </option>
   </component>
@@ -285,8 +307,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,7 +385,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +399,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AppleStore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Luladik/IdeaProjects/Shop Manager/src/main/java/com/kapitsa/bean/Shop.java" />
   </component>
   <component name="RecentsManager">
@@ -620,6 +642,9 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Unknown" factoryName="Unknown">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -665,12 +690,13 @@
       <option name="number" value="Default" />
       <updated>1455903681608</updated>
       <workItem from="1455903686677" duration="41518000" />
-      <workItem from="1456010404929" duration="27047000" />
+      <workItem from="1456010404929" duration="29733000" />
+      <workItem from="1456082081756" duration="2725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68565000" />
+    <option name="totallyTimeSpent" value="73976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-8" width="1308" height="784" extended-state="6" />
@@ -688,7 +714,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21153846" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23798077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23798077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -728,6 +754,153 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Shop#0;class#Shop#0" expanded="false" />
+            <element signature="method#setItemPrice#0;class#Shop#0" expanded="false" />
+            <element signature="method#setItemState#0;class#Shop#0" expanded="false" />
+            <element signature="method#getItemByTitle#0;class#Shop#0" expanded="false" />
+            <element signature="method#addItem#0;class#Shop#0" expanded="false" />
+            <marker date="1456084710724" expanded="true" signature="502:566" placeholder="SELECT id FR..categories..." />
+            <marker date="1456084710724" expanded="true" signature="605:662" placeholder="SELECT Title..Items..." />
+            <marker date="1456084710724" expanded="true" signature="700:735" placeholder="SELECT * FRO..Items..." />
+            <marker date="1456084710724" expanded="true" signature="778:820" placeholder="UPDATE Items..." />
+            <marker date="1456084710724" expanded="true" signature="865:907" placeholder="UPDATE Items..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="method#Item#0;class#Item#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="443" column="11" selection-start-line="443" selection-start-column="11" selection-end-line="443" selection-end-column="11" />
+          <folding>
+            <element signature="e#14796#14797#0" expanded="false" />
+            <element signature="e#14860#14861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ShopFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/StatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1456084117857" expanded="true" signature="1182:1223" placeholder="CREATE DATAB..shopmanager..." />
+            <marker date="1456084117857" expanded="true" signature="1256:1476" placeholder="CREATE TABLE..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="1515:1901" placeholder="CREATE TABLE..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="1935:2477" placeholder="CREATE TABLE..Items..." />
+            <marker date="1456084117857" expanded="true" signature="2509:2581" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2617:3198" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2718:2765" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2821:2868" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2928:2975" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3031:3082" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3136:3187" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3230:3300" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4403" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4741" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4742" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6079" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6080" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3327:3373" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3440:3486" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3547:3593" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3652:3698" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3759:3806" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3874:3921" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3982:4029" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4089:4136" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4207:4254" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4318:4365" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4430:4477" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4549:4596" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4663:4711" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4770:4818" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4881:4929" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4994:5042" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5102:5150" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5214:5266" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5326:5378" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5438:5490" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5556:5608" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5667:5715" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5780:5828" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5886:5934" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6025" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6048" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6235:6250" placeholder="USE shopmana..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ClothingShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -749,18 +922,50 @@
           <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1456077325507" expanded="true" signature="1147:1188" placeholder="CREATE DATAB..shopmanager..." />
-            <marker date="1456077325507" expanded="true" signature="1221:1441" placeholder="CREATE TABLE..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="1480:1866" placeholder="CREATE TABLE..Categories..." />
-            <marker date="1456077325507" expanded="true" signature="1900:2440" placeholder="CREATE TABLE..Items..." />
-            <marker date="1456077325507" expanded="true" signature="2472:2544" placeholder="INSERT IGNOR..." />
-            <marker date="1456077325507" expanded="true" signature="2580:3161" placeholder="INSERT IGNOR..." />
-            <marker date="1456077325507" expanded="true" signature="2681:2728" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2784:2831" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2891:2938" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2994:3045" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="3099:3150" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="3503:3518" placeholder="USE shopmana..." />
+            <marker date="1456084117857" expanded="true" signature="1182:1223" placeholder="CREATE DATAB..shopmanager..." />
+            <marker date="1456084117857" expanded="true" signature="1256:1476" placeholder="CREATE TABLE..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="1515:1901" placeholder="CREATE TABLE..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="1935:2477" placeholder="CREATE TABLE..Items..." />
+            <marker date="1456084117857" expanded="true" signature="2509:2581" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2617:3198" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2718:2765" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2821:2868" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2928:2975" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3031:3082" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3136:3187" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3230:3300" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4403" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4741" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4742" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6079" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6080" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3327:3373" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3440:3486" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3547:3593" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3652:3698" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3759:3806" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3874:3921" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3982:4029" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4089:4136" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4207:4254" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4318:4365" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4430:4477" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4549:4596" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4663:4711" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4770:4818" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4881:4929" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4994:5042" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5102:5150" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5214:5266" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5326:5378" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5438:5490" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5556:5608" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5667:5715" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5780:5828" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5886:5934" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6025" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6048" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6235:6250" placeholder="USE shopmana..." />
           </folding>
         </state>
       </provider>
@@ -773,13 +978,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Shop#0;class#Shop#0" expanded="false" />
             <element signature="method#setItemPrice#0;class#Shop#0" expanded="false" />
+            <element signature="method#setItemState#0;class#Shop#0" expanded="false" />
             <element signature="method#getItemByTitle#0;class#Shop#0" expanded="false" />
             <element signature="method#addItem#0;class#Shop#0" expanded="false" />
-            <marker date="1456077277273" expanded="true" signature="452:516" placeholder="SELECT id FR..categories..." />
-            <marker date="1456077277273" expanded="true" signature="555:612" placeholder="SELECT Title..Items..." />
-            <marker date="1456077277273" expanded="true" signature="650:685" placeholder="SELECT * FRO..Items..." />
-            <marker date="1456077277273" expanded="true" signature="728:770" placeholder="UPDATE Items..." />
-            <marker date="1456077277273" expanded="true" signature="815:857" placeholder="UPDATE Items..." />
+            <marker date="1456084710724" expanded="true" signature="502:566" placeholder="SELECT id FR..categories..." />
+            <marker date="1456084710724" expanded="true" signature="605:662" placeholder="SELECT Title..Items..." />
+            <marker date="1456084710724" expanded="true" signature="700:735" placeholder="SELECT * FRO..Items..." />
+            <marker date="1456084710724" expanded="true" signature="778:820" placeholder="UPDATE Items..." />
+            <marker date="1456084710724" expanded="true" signature="865:907" placeholder="UPDATE Items..." />
           </folding>
         </state>
       </provider>
@@ -830,9 +1036,10 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="106.0" y="165.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -840,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,29 +1058,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/c78d3261/96da5d18-dd97-45b7-9bc4-d2ab2feacea5/shopmanager..shops">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/c78d3261/96da5d18-dd97-45b7-9bc4-d2ab2feacea5/shopmanager..categories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="443" column="11" selection-start-line="443" selection-start-column="11" selection-end-line="443" selection-end-column="11" />
+          <folding>
+            <element signature="e#14796#14797#0" expanded="false" />
+            <element signature="e#14860#14861#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -891,14 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ShopFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/StatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -907,38 +1098,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ClothingShop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1456084117857" expanded="true" signature="1182:1223" placeholder="CREATE DATAB..shopmanager..." />
+            <marker date="1456084117857" expanded="true" signature="1256:1476" placeholder="CREATE TABLE..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="1515:1901" placeholder="CREATE TABLE..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="1935:2477" placeholder="CREATE TABLE..Items..." />
+            <marker date="1456084117857" expanded="true" signature="2509:2581" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2617:3198" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="2718:2765" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2821:2868" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="2928:2975" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3031:3082" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3136:3187" placeholder="SELECT id FR..Shops..." />
+            <marker date="1456084117857" expanded="true" signature="3230:3300" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4403" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4741" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:4742" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6079" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3230:6080" placeholder="INSERT IGNOR..." />
+            <marker date="1456084117857" expanded="true" signature="3327:3373" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3440:3486" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3547:3593" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3652:3698" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3759:3806" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3874:3921" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="3982:4029" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4089:4136" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4207:4254" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4318:4365" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4430:4477" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4549:4596" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4663:4711" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4770:4818" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4881:4929" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="4994:5042" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5102:5150" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5214:5266" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5326:5378" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5438:5490" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5556:5608" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5667:5715" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5780:5828" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="5886:5934" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6025" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6000:6048" placeholder="SELECT id FR..Categories..." />
+            <marker date="1456084117857" expanded="true" signature="6235:6250" placeholder="USE shopmana..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Shop#0;class#Shop#0" expanded="false" />
             <element signature="method#setItemPrice#0;class#Shop#0" expanded="false" />
+            <element signature="method#setItemState#0;class#Shop#0" expanded="false" />
             <element signature="method#getItemByTitle#0;class#Shop#0" expanded="false" />
             <element signature="method#addItem#0;class#Shop#0" expanded="false" />
-            <marker date="1456077277273" expanded="true" signature="452:516" placeholder="SELECT id FR..categories..." />
-            <marker date="1456077277273" expanded="true" signature="555:612" placeholder="SELECT Title..Items..." />
-            <marker date="1456077277273" expanded="true" signature="650:685" placeholder="SELECT * FRO..Items..." />
-            <marker date="1456077277273" expanded="true" signature="728:770" placeholder="UPDATE Items..." />
-            <marker date="1456077277273" expanded="true" signature="815:857" placeholder="UPDATE Items..." />
+            <marker date="1456084710724" expanded="true" signature="502:566" placeholder="SELECT id FR..categories..." />
+            <marker date="1456084710724" expanded="true" signature="605:662" placeholder="SELECT Title..Items..." />
+            <marker date="1456084710724" expanded="true" signature="700:735" placeholder="SELECT * FRO..Items..." />
+            <marker date="1456084710724" expanded="true" signature="778:820" placeholder="UPDATE Items..." />
+            <marker date="1456084710724" expanded="true" signature="865:907" placeholder="UPDATE Items..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ShopFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -948,38 +1186,34 @@
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="method#Item#0;class#Item#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/FoodShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/shop/ClothingShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.569378">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kapitsa/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1052632">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1456077325507" expanded="true" signature="1147:1188" placeholder="CREATE DATAB..shopmanager..." />
-            <marker date="1456077325507" expanded="true" signature="1221:1441" placeholder="CREATE TABLE..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="1480:1866" placeholder="CREATE TABLE..Categories..." />
-            <marker date="1456077325507" expanded="true" signature="1900:2440" placeholder="CREATE TABLE..Items..." />
-            <marker date="1456077325507" expanded="true" signature="2472:2544" placeholder="INSERT IGNOR..." />
-            <marker date="1456077325507" expanded="true" signature="2580:3161" placeholder="INSERT IGNOR..." />
-            <marker date="1456077325507" expanded="true" signature="2681:2728" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2784:2831" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2891:2938" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="2994:3045" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="3099:3150" placeholder="SELECT id FR..Shops..." />
-            <marker date="1456077325507" expanded="true" signature="3503:3518" placeholder="USE shopmana..." />
           </folding>
         </state>
       </provider>

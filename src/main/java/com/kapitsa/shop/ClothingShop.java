@@ -13,4 +13,9 @@ class ClothingShop extends Shop {
         return instance;
     }
 
+    public void run() {
+        System.out.println("Running thread " + thread.getName() + "... in Clothing Shop");
+
+    }
+
 }

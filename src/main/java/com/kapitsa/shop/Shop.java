@@ -9,7 +9,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 //extends Runnable
-public abstract class Shop {
+public abstract class Shop implements Runnable {
+    protected  Thread thread;
 
     protected static volatile Shop instance = null;
 
@@ -22,8 +23,17 @@ public abstract class Shop {
 
     protected Shop() {
     }
+
+    public void start() {
+        if (thread == null) {
+            thread = new Thread(this);
+            thread.start();
+        }
+        System.out.println("Started thread " + thread.getName() + "...");
+    }
+
     //логичнее было бы реализовать метод в классе Item, но можно и так как написано в ТЗ
-    public void setItemPrice(Item item, double price) throws SQLException {
+    public synchronized void setItemPrice(Item item, double price) throws SQLException {
 
         PreparedStatement preparedStatement = null;
         Connection connection = null;
@@ -51,7 +61,7 @@ public abstract class Shop {
         }
 
     }
-    public void setItemState(Item item, StatusEnum state) throws SQLException {
+    public synchronized void setItemState(Item item, StatusEnum state) throws SQLException {
 
         PreparedStatement preparedStatement = null;
         Connection connection = null;
@@ -80,7 +90,7 @@ public abstract class Shop {
 
     }
 
-    public Item getItemByTitle(String title) throws SQLException {
+    public synchronized Item getItemByTitle(String title) throws SQLException {
 
         PreparedStatement preparedStatement = null;
         Connection connection = null;
@@ -111,7 +121,7 @@ public abstract class Shop {
         return item;
     }
 
-    public void addItem(Item item, String categoryTitle) throws SQLException {
+    public synchronized void addItem(Item item, String categoryTitle) throws SQLException {
 
         PreparedStatement preparedStatement = null;
         Connection connection = null;
