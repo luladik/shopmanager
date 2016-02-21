@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - shopmanager@localhost" uuid="96da5d18-dd97-45b7-9bc4-d2ab2feacea5">
+    <database-info product="MySQL" version="5.7.9-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="shopmanager"/>
+    <table name="categories" schema="" catalog="shopmanager" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="shop_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Title" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="categories_ibfk_1" columns="shop_id" ref-table="shops" ref-schema="" ref-catalog="shopmanager" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="items_ibfk_1" table="items" schema="" catalog="shopmanager" columns="category_id"/>
+    </table>
+    <table name="items" schema="" catalog="shopmanager" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="category_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Title" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Price" sqlType="DECIMAL" precision="20" scale="0" nullable="false" jdbcType="3"/>
+      <column name="State" sqlType="ENUM" precision="10" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="items_ibfk_1" columns="category_id" ref-table="categories" ref-schema="" ref-catalog="shopmanager" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="shops" schema="" catalog="shopmanager" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="categories_ibfk_1" table="categories" schema="" catalog="shopmanager" columns="shop_id"/>
+    </table>
+  </data-source>
+</component>
