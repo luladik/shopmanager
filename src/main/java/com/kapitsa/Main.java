@@ -16,11 +16,30 @@ public class Main {
     private static boolean foodShopIsActive = true;
     private static boolean clothingShopIsActive = true;
 
+    public static void updateTable(Statement statement, String expectedCategory) throws SQLException {
+        statement.executeUpdate("UPDATE shopmanager.Items SET State = 'Absent' WHERE category_id = " +
+                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')");
+        //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
+        ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
+                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')");
+
+        //"...половине товаров, из оставшихся категорий, изменить статус на «Expected»."
+        //Using limit is a much better way than random in this case
+        int count = -2;
+        while (resultSet.next())
+            count = resultSet.getInt(1)/2;
+        if (count == -2)
+            System.out.println("Something went wrong! (count of untouched rows)");
+        statement.executeUpdate("UPDATE shopmanager.Items SET Items.State = '"+ expectedCategory +"' WHERE category_id <>" +
+                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')" +
+                "ORDER BY id LIMIT " + count);
+    }
+
     public static void main(String[] args) throws SQLException {
 
         final Connection connection = DBManager.getDBConnection();
         final Statement statement = connection.createStatement();
-
+        //Database initializing
         DBManager.init();
 
         final Shop foodShop = ShopFactory.getShop("Food");
@@ -34,23 +53,8 @@ public class Main {
                     foodShop.addItem(new Item("Pineapple", 75.50, StatusEnum.Expected), "Fruits");
                     foodShop.addItem(new Item("Milk", 22.70, StatusEnum.Available), "Drinks");
                     foodShop.addItem(new Item("Carrot", 9.70, StatusEnum.Absent), "Vegetables");
-                    statement.executeUpdate("UPDATE shopmanager.Items SET State = 'Absent' WHERE category_id = " +
-                            "(SELECT id FROM Categories WHERE Title = 'Drinks')");
 
-                    //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
-                    ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
-                            "(SELECT id FROM Categories WHERE Title = 'Drinks')");
-
-                    //"...половине товаров, из оставшихся категорий, изменить статус на «Expected»."
-                    //Using limit is a much better way than random in this case
-                    int count = -2;
-                    while (resultSet.next())
-                        count = resultSet.getInt(1)/2;
-                    if (count == -2)
-                        System.out.println("Something went wrong! (count of untouched rows)");
-                    statement.executeUpdate("UPDATE shopmanager.Items SET Items.State = 'Expected' WHERE category_id <>" +
-                            "(SELECT id FROM Categories WHERE Title = 'Drinks')" +
-                            "ORDER BY id LIMIT " + count);
+                    updateTable(statement, "Drinks");
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -71,23 +75,7 @@ public class Main {
                     clothingShop.addItem(new Item("Puma Sneakers", 1550.00, StatusEnum.Expected ), "Shoes");
                     clothingShop.addItem(new Item("Nike Free Run", 2180.00, StatusEnum.Absent), "Shoes");
                     clothingShop.addItem(new Item("Western Leather Hat", 540, StatusEnum.Available  ), "Hats");
-                    statement.executeUpdate("UPDATE shopmanager.Items SET State = 'Absent' WHERE category_id = " +
-                        "(SELECT id FROM Categories WHERE Title = 'Shoes')");
-
-                    //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
-                    ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
-                            "(SELECT id FROM Categories WHERE Title = 'Shoes')");
-
-                    //"...половине товаров, из оставшихся категорий, изменить статус на «Expected»."
-                    //Using limit is a much better way than random in this case
-                    int count = -2;
-                    while (resultSet.next())
-                        count = resultSet.getInt(1)/2;
-                    if (count == -2)
-                        System.out.println("Something went wrong! (count of untouched rows)");
-                    statement.executeUpdate("UPDATE shopmanager.Items SET Items.State = 'Expected' WHERE category_id <>" +
-                            "(SELECT id FROM Categories WHERE Title = 'Shoes')" +
-                            "ORDER BY id LIMIT " + count);
+                    updateTable(statement, "Shoes");
 
                 } catch (SQLException e) {
                     e.printStackTrace();
