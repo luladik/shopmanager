@@ -135,7 +135,6 @@ public abstract class Shop {
             int categoryId = 0;
             while (resultSet.next())
                 categoryId = resultSet.getInt(1);
-            System.out.println(categoryId);
             preparedStatement.clearParameters();
 
             preparedStatement = connection.prepareStatement(ADD_ITEM);

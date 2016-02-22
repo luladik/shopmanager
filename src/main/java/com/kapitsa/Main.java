@@ -17,11 +17,14 @@ public class Main {
     private static boolean clothingShopIsActive = true;
 
     public static void updateTable(Statement statement, String expectedCategory) throws SQLException {
+        Connection connection = DBManager.getDBConnection();
+        statement = connection.createStatement();
+
         statement.executeUpdate("UPDATE shopmanager.Items SET items.Status = 'Absent' WHERE category_id = " +
-                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')");
+                "(SELECT id FROM shopmanager.Categories WHERE Title = '"+ expectedCategory +"')");
         //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
         ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
-                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')");
+                "(SELECT id FROM shopmanager.Categories WHERE Title = '"+ expectedCategory +"')");
 
         //"...половине товаров, из оставшихся категорий, изменить статус на «Expected»."
         //Using limit is a much better way than random in this case
@@ -30,9 +33,10 @@ public class Main {
             count = resultSet.getInt(1)/2;
         if (count == -2)
             System.out.println("Something went wrong! (count of untouched rows)");
-        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Status = '"+ expectedCategory +"' WHERE category_id <>" +
-                "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')" +
+        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Status = '" + expectedCategory + "' WHERE category_id <>" +
+                "(SELECT id FROM shopmanager.Categories WHERE Title = '" + expectedCategory + "')" +
                 "ORDER BY id LIMIT " + count);
+        statement.close();
     }
 
     public static void main(String[] args) throws SQLException {
@@ -49,6 +53,7 @@ public class Main {
             public void run() {
                 try {
                     Thread.sleep(10000);
+                    System.out.println("Thread 2 started...");
                     foodShop.addItem(new Item("Coconut", 60.00, StatusEnum.Available), "Fruits");
                     foodShop.addItem(new Item("Pineapple", 75.50, StatusEnum.Expected), "Fruits");
                     foodShop.addItem(new Item("Milk", 22.70, StatusEnum.Available), "Drinks");
@@ -72,6 +77,7 @@ public class Main {
         new Thread(new Runnable() {
             public void run() {
                 try {
+                    System.out.println("Thread 1 started...");
                     clothingShop.addItem(new Item("Puma Sneakers", 1550.00, StatusEnum.Expected ), "Shoes");
                     clothingShop.addItem(new Item("Nike Free Run", 2180.00, StatusEnum.Absent), "Shoes");
                     clothingShop.addItem(new Item("Western Leather Hat", 540, StatusEnum.Available  ), "Hats");

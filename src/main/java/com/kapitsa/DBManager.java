@@ -17,13 +17,11 @@ public class DBManager {
         Connection dbConnection;
         try {
             Class.forName(DRIVER);
-            System.out.println("Driver connected");
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());
         }
         try {
             dbConnection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("Successfully Connected");
             return dbConnection;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
