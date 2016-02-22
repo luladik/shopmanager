@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 //extends Runnable
 public abstract class Shop {
-    protected  Thread thread;
+    protected Thread thread;
 
     protected static volatile Shop instance = null;
 
