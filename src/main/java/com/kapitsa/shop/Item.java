@@ -6,24 +6,24 @@ public class Item {
     private int id;
     private String title;
     private double price;
-    private Enum state;
+    private StatusEnum status;
 
     public Item() {
 
     }
 
-    public Item(String title, double price, StatusEnum state) {
+    public Item(String title, double price, StatusEnum status) {
         this.title = title;
         this.price = price;
-        this.state = state;
+        this.status = status;
     }
 
-    public String getState() {
-        return String.valueOf(state);
+    public String getStatus() {
+        return String.valueOf(status);
     }
 
-    public void setState(StatusEnum state) {
-        this.state = state;
+    public void setStatus(StatusEnum status) {
+        this.status = status;
     }
 
     public double getPrice() {

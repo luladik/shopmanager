@@ -19,7 +19,7 @@ public abstract class Shop {
     protected final String CHECK = "SELECT Title FROM shopmanager.Items WHERE Items.Title = ?";
     protected final String FIND = "SELECT * FROM Items WHERE Title = ?";
     protected final String SET_PRICE = "UPDATE Items SET price = ? WHERE Title = ?;";
-    protected final String SET_STATUS = "UPDATE Items SET State = ? WHERE Title = ?;";
+    protected final String SET_STATUS = "UPDATE Items SET Status = ? WHERE Title = ?;";
 
     protected Shop() {
     }
@@ -54,7 +54,7 @@ public abstract class Shop {
 
     }
 
-    public synchronized void setItemState(Item item, StatusEnum state) throws SQLException {
+    public synchronized void setItemState(Item item, StatusEnum status) throws SQLException {
 
         PreparedStatement preparedStatement = null;
         Connection connection = null;
@@ -63,9 +63,9 @@ public abstract class Shop {
             connection = DBManager.getDBConnection();
             preparedStatement = connection.prepareStatement(SET_STATUS);
 
-            item.setState(state);
+            item.setStatus(status);
 
-            preparedStatement.setString(1, String.valueOf(state));
+            preparedStatement.setString(1, String.valueOf(status));
             preparedStatement.setString(2, item.getTitle());
             preparedStatement.executeUpdate();
 
@@ -96,7 +96,7 @@ public abstract class Shop {
             if (resultSet != null) {
                 item.setId(resultSet.getInt("id"));
                 item.setPrice(resultSet.getDouble("Price"));
-                item.setState(StatusEnum.valueOf(resultSet.getString("State")));
+                item.setStatus(StatusEnum.valueOf(resultSet.getString("Status")));
                 return item;
             } else return null;
 
@@ -142,7 +142,7 @@ public abstract class Shop {
             preparedStatement.setInt(1, categoryId);
             preparedStatement.setString(2, item.getTitle());
             preparedStatement.setDouble(3, item.getPrice());
-            preparedStatement.setString(4, item.getState().toString());
+            preparedStatement.setString(4, item.getStatus().toString());
             preparedStatement.executeUpdate();
             preparedStatement.clearParameters();
 

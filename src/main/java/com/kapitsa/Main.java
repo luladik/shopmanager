@@ -17,7 +17,7 @@ public class Main {
     private static boolean clothingShopIsActive = true;
 
     public static void updateTable(Statement statement, String expectedCategory) throws SQLException {
-        statement.executeUpdate("UPDATE shopmanager.Items SET State = 'Absent' WHERE category_id = " +
+        statement.executeUpdate("UPDATE shopmanager.Items SET items.Status = 'Absent' WHERE category_id = " +
                 "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')");
         //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
         ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
@@ -30,7 +30,7 @@ public class Main {
             count = resultSet.getInt(1)/2;
         if (count == -2)
             System.out.println("Something went wrong! (count of untouched rows)");
-        statement.executeUpdate("UPDATE shopmanager.Items SET Items.State = '"+ expectedCategory +"' WHERE category_id <>" +
+        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Status = '"+ expectedCategory +"' WHERE category_id <>" +
                 "(SELECT id FROM Categories WHERE Title = '"+ expectedCategory +"')" +
                 "ORDER BY id LIMIT " + count);
     }

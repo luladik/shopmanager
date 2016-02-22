@@ -48,7 +48,7 @@ public class DBManager {
                                 "category_id INT(10) UNSIGNED NOT NULL ," +
                                 "Title VARCHAR(30) NOT NULL," +
                                 "Price DECIMAL(20,2) NOT NULL," +
-                                "State ENUM('Available', 'Absent', 'Expected')," +
+                                "Status ENUM('Available', 'Absent', 'Expected')," +
                                 "FOREIGN KEY(category_id) REFERENCES Categories(id)" +
                                 ");";
         String fillShops = "INSERT IGNORE INTO Shops VALUES (1, 'Food Store'), (2, 'Clothing Store')";
@@ -58,7 +58,7 @@ public class DBManager {
                                 "(96, (SELECT id FROM Shops WHERE Title = 'Food Store'), 'Drinks')," +
                                 "(47, (SELECT id FROM Shops WHERE Title = 'Clothing Store'), 'Hats')," +
                                 "(81, (SELECT id FROM Shops WHERE Title = 'Clothing Store'), 'Shoes');";
-        String fillItems = "INSERT IGNORE INTO Items (id, category_id, Title, Price, State) VALUES" +
+        String fillItems = "INSERT IGNORE INTO Items (id, category_id, Title, Price, Status) VALUES" +
                 "(47, (SELECT id FROM Categories WHERE Title = 'Hats'), 'Baseball cap', 250.00, 'Available')," +
                 "(12, (SELECT id FROM Categories WHERE Title = 'Hats'), 'Brixton', 700.00, 'Expected')," +
                 "(23, (SELECT id FROM Categories WHERE Title = 'Hats'), 'Asos', 480.00, 'Available')," +
