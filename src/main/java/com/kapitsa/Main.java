@@ -16,15 +16,17 @@ public class Main {
     private static boolean foodShopIsActive = true;
     private static boolean clothingShopIsActive = true;
 
-    public static void updateTable(Statement statement, String expectedCategory) throws SQLException {
-        Connection connection = DBManager.getDBConnection();
-        statement = connection.createStatement();
+    private static final Connection connection = DBManager.getDBConnection();
+
+    private static void updateTable(String expectedCategory) throws SQLException {
+
+        Statement statement = connection.createStatement();
 
         statement.executeUpdate("UPDATE shopmanager.Items SET items.Status = 'Absent' WHERE category_id = " +
-                "(SELECT id FROM shopmanager.Categories WHERE Title = '"+ expectedCategory +"')");
+                "(SELECT id FROM shopmanager.Categories WHERE Title = '" + expectedCategory + "')");
         //"В какой-то из категорий изменить статусы всех товаров на «Absent»..."
-        ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>\n" +
-                "(SELECT id FROM shopmanager.Categories WHERE Title = '"+ expectedCategory +"')");
+        ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM Items WHERE category_id <>" +
+                "(SELECT id FROM shopmanager.Categories WHERE Title = '" + expectedCategory + "')");
 
         //"...половине товаров, из оставшихся категорий, изменить статус на «Expected»."
         //Using limit is a much better way than random in this case
@@ -33,16 +35,23 @@ public class Main {
             count = resultSet.getInt(1)/2;
         if (count == -2)
             System.out.println("Something went wrong! (count of untouched rows)");
-        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Status = '" + expectedCategory + "' WHERE category_id <>" +
+        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Status = '" + expectedCategory +
+                "' WHERE category_id <>" +
                 "(SELECT id FROM shopmanager.Categories WHERE Title = '" + expectedCategory + "')" +
                 "ORDER BY id LIMIT " + count);
         statement.close();
     }
 
+    private static void raisePrice() throws SQLException {
+        Statement statement = connection.createStatement();
+        statement.executeUpdate("UPDATE shopmanager.Items SET Items.Price = Items.Price*1.2" +
+                "WHERE Items.Status = 'Available'");
+    }
+
     public static void main(String[] args) throws SQLException {
 
-        final Connection connection = DBManager.getDBConnection();
         final Statement statement = connection.createStatement();
+
         //Database initializing
         DBManager.init();
 
@@ -59,7 +68,8 @@ public class Main {
                     foodShop.addItem(new Item("Milk", 22.70, StatusEnum.Available), "Drinks");
                     foodShop.addItem(new Item("Carrot", 9.70, StatusEnum.Absent), "Vegetables");
 
-                    updateTable(statement, "Drinks");
+                    updateTable("Drinks");
+                    raisePrice();
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -81,7 +91,9 @@ public class Main {
                     clothingShop.addItem(new Item("Puma Sneakers", 1550.00, StatusEnum.Expected ), "Shoes");
                     clothingShop.addItem(new Item("Nike Free Run", 2180.00, StatusEnum.Absent), "Shoes");
                     clothingShop.addItem(new Item("Western Leather Hat", 540, StatusEnum.Available  ), "Hats");
-                    updateTable(statement, "Shoes");
+
+                    updateTable("Shoes");
+                    raisePrice();
 
                 } catch (SQLException e) {
                     e.printStackTrace();
