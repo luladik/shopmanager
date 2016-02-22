@@ -91,7 +91,6 @@ public class Main {
                     clothingShop.addItem(new Item("Puma Sneakers", 1550.00, StatusEnum.Expected ), "Shoes");
                     clothingShop.addItem(new Item("Nike Free Run", 2180.00, StatusEnum.Absent), "Shoes");
                     clothingShop.addItem(new Item("Western Leather Hat", 540, StatusEnum.Available  ), "Hats");
-
                     updateTable("Shoes");
                     raisePrice();
 
